@@ -35,11 +35,6 @@ public class VisitorImpl extends PersonImpl implements Visitor{
 	public int getPrisonerID() {
 		return this.prisonerID;
 	}
-
-	@Override
-	public void setIdPrisoner(int prisonerID) {
-		this.prisonerID=prisonerID;
-	}
 	
 	@Override
 	public String toString() {
