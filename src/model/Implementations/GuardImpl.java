@@ -32,16 +32,10 @@ public class GuardImpl extends PersonImpl implements Guard{
 	public GuardImpl(String name, String surname, Date birthDate, int rank, String telephoneNumber, int idGuardia,
 			String password) {
 		super(name, surname, birthDate);
-		this.setRank(rank);
-		this.setTelephoneNumber(telephoneNumber);
+		this.rank = rank;
+		this.telephoneNumber = telephoneNumber;
 		this.idGuardia = idGuardia;
 		this.password = password;
-	}
-
-	@Override
-	public void setPassword(String newPass) {
-		this.password=newPass;
-		
 	}
 
 	@Override
@@ -60,28 +54,13 @@ public class GuardImpl extends PersonImpl implements Guard{
 	}
 
 	@Override
-	public void setTelephoneNumber(String telephoneNumber) {
-		this.telephoneNumber = telephoneNumber;
-	}
-
-	@Override
 	public int getRank() {
 		return rank;
 	}
 	
 	@Override
-	public void setRank(int rank) {
-		this.rank = rank;
-	}
-	
-	@Override
 	public int getID() {
 		return idGuardia;
-	}
-	
-	@Override
-	public void setID(int idGuardia) {
-		this.idGuardia = idGuardia;
 	}
 
 
