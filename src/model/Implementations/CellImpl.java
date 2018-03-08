@@ -25,7 +25,7 @@ public class CellImpl implements Cell, Serializable{
 	 * @param position posizione
 	 * @param capacity capacità
 	 */
-	public CellImpl(int id, String position, int capacity){
+	public CellImpl(final int id, final String position, final int capacity){
 		this.id=id;
 		this.position=position;
 		this.capacity=capacity;
@@ -36,7 +36,7 @@ public class CellImpl implements Cell, Serializable{
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(final int id) {
 		this.id = id;
 	}
 
@@ -44,7 +44,7 @@ public class CellImpl implements Cell, Serializable{
 		return position;
 	}
 
-	public void setPosition(String position) {
+	public void setPosition(final String position) {
 		this.position = position;
 	}
 
@@ -52,7 +52,7 @@ public class CellImpl implements Cell, Serializable{
 		return capacity;
 	}
 
-	public void setCapacity(int capacity) {
+	public void setCapacity(final int capacity) {
 		this.capacity = capacity;
 	}
 
@@ -60,7 +60,7 @@ public class CellImpl implements Cell, Serializable{
 		return CurrentPrisoners;
 	}
 
-	public void setCurrentPrisoners(int currentPrisoners) {
+	public void setCurrentPrisoners(final int currentPrisoners) {
 		CurrentPrisoners = currentPrisoners;
 	}
 
